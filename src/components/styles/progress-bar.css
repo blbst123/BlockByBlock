@@ -1,0 +1,62 @@
+/* PROGRESS BAR */
+.progress_bar {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 50px 20px 30px;
+  grid-template-columns: repeat(8, 100px);
+  width: 800px;
+  margin: 0 auto;
+}
+
+.meter { 
+  height: 15px;  /* Can be anything */
+  width: 500px;
+	position: relative;
+	background: rgb(52, 58, 64);
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  grid-column: 2 / span 6;
+  grid-row: 1 / span 1;
+  box-sizing: initial;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: orange;
+  background-image: linear-gradient(
+    center bottom,
+    rgb(255,165,0) 37%,
+    rgb(255,165,0) 69%
+  );
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+    inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.pointer {
+  width: 5px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 3px;
+  grid-row: 2 / span 1;
+}
+
+.pointer_description {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: orange;
+  grid-row: 3 / span 1;
+  margin: 0;
+}

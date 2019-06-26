@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 html {
-  font-family: sans-serif;
+  background-color: rgb(244, 244, 244);
+  margin: 0; 
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+  margin: auto;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -619,4 +626,100 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+
+/****************************
+  Layout CSS
+****************************/
+.Main {
+  background-color: white;
+  width: 1000px;
+  height: 90vh;
+  min-height: 700px;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 100px 100px;
+  justify-items: center;
+}
+
+/* INTRO */
+.Intro h1 {
+  color: rgb(52, 58, 64);
+  padding-bottom: 20px;
+  font-size: 22px;
+  padding-top: 30px;
+}
+
+#intro_image {
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 0 20px 0;
+  border: 1px solid orange;
+  border-radius: 3px;
+}
+
+.Intro h2 {
+  color: rgb(52, 58, 64);
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* TRANSACTION */
+.flex-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.flex-line img {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+}
+
+.btc-amount {
+  color: orange;
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+#secret-key {
+  color: grey;
+  margin: 5px;
+}
+
+.select_recipient {
+  display: flex;
+  justify-content: center;
+}
+
+.recipient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.recipient img {
+  margin-left: 10px;
+}
+
+/* CONFIRM SECRET KEY*/
+.tip {
+  font-style: italic;
+  margin: 3px;
+}
+
+#topTip {
+  margin-top: 20px;
+}
+
+/* MEMPOOL */
+.mempool_description {
+  width: 700px;
+  text-align: justify;
 }

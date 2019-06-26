@@ -1,0 +1,28 @@
+/* BUTTONS */
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
+
+.button_link {
+  background-color: orange; /* Green */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 16px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#custom_button {
+  background-color: #e7e7e7;
+  color: black;
+  padding: 16px 25px;
+}
