@@ -4,13 +4,15 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ProgressBar from "../components/progress-bar";
 import Buttons from "../components/buttons";
+import IntroImage from "../components/intro-image";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="Intro">
       <h1>Walk through the Lifecycle of a Bitcoin Transaction</h1>
-      <img src="https://bitfortune.net/wp-content/uploads/2018/10/how-do-bitcoin-transactions-work-810x455.png" id="intro_image" alt="bitcoin transaction icon" />
+      <IntroImage img="intro-page.png" />
+      {/* <img src="../images/intro-page.png" id="intro_image" alt="bitcoin transaction icon" /> */}
       <h2>See an example of a Bitcoin transaction from start to finish!</h2>
       <h2>Press begin to start up a demo transaction.</h2>
     </div>

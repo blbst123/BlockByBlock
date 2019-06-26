@@ -652,12 +652,11 @@ pre tt:after {
   padding-top: 30px;
 }
 
-#intro_image {
+.intro_image {
   border-radius: 5px;
-  width: 400px;
   margin-bottom: 20px;
-  border: 1px solid orange;
-  border-radius: 3px;
+  /* border: 1px solid orange; */
+  border-radius: 10px;
 }
 
 .Intro h2 {
