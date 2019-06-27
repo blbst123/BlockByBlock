@@ -26,7 +26,7 @@ const Mempool = () => (
             <p>Other transactions</p>
           </div>
         </div>
-        <div className="mempool_text">
+        <div className="mempool_text text-block">
           <p>The Mempool is the place where unprocessed transactions wait to
               be filled. Every interval (around 10 mins), the Bitcoin network picks
               a group of transactions from the Mempool and executes them all in
@@ -40,7 +40,7 @@ const Mempool = () => (
       <h4>Let’s see if our transaction can get processed.</h4>
     </div>
     <ProgressBar location={3} pointerDes="Mempool" />
-    <Buttons nextPage="index" prevPage="secret-key" />
+    <Buttons nextPage="transaction-fee" prevPage="secret-key" />
   </Layout>
 );
 
