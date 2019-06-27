@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="Intro">
       <h1>Walk through the Lifecycle of a Bitcoin Transaction</h1>
-      <IntroImage img="intro-page.png" />
+      <IntroImage />
       <h2>See an example of a Bitcoin transaction from start to finish!</h2>
       <h2>Press begin to start up a demo transaction.</h2>
     </div>
