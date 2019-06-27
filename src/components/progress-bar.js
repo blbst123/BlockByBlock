@@ -8,12 +8,12 @@ const ProgressBar = function (props) {
   const style = { width: `${location * 20}%` };
   const pointerStyle = { gridColumn: `${location + 1} / span 3` };
   return (
-    <div className="progress_bar">
+    <div className="progress-bar">
       <div className="meter">
         <span style={style} />
       </div>
       <div className="pointer" style={pointerStyle} />
-      <p className="pointer_description" style={pointerStyle}>{pointerDes}</p>
+      <p className="pointer-description" style={pointerStyle}>{pointerDes}</p>
     </div>
   );
 };

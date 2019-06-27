@@ -28,13 +28,13 @@ export default class TransactionFee extends React.Component {
             <h3>Uh oh, the block filled up with other transactions from the Mempool</h3>
           </div>
           <h1>Which Transactions are Processed First?</h1>
-          <div className="transaction-fee_description">
+          <div className="transaction-fee__description">
             <h4>Order of Transactions</h4>
             <div className="flex-around">
-              <div className="transaction-fee_block">
+              <div className="transaction-fee__block">
                 <p>Block 1MB</p>
               </div>
-              <div className="transaction-fee_text text-block">
+              <div className="transaction-fee__text text-block">
                 <p>Since each block can only store a limited number of transactions,
                   transactions will often have to wait in the Mempool until all
               previously submitted transactions have been processed.</p>

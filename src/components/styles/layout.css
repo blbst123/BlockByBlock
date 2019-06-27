@@ -446,10 +446,9 @@ pre tt:after {
   padding-top: 30px;
 }
 
-.intro_image {
+.intro-image {
   border-radius: 5px;
   margin-bottom: 20px;
-  /* border: 1px solid orange; */
   border-radius: 10px;
 }
 
@@ -511,20 +510,20 @@ pre tt:after {
   margin-top: 15px;
 }
 
-.mempool_description {
+.mempool-description {
   display: grid;
   grid-template-columns: 300px 500px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
-.mempool_image {
+.mempool-image {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.mempool_image_label * {
+.mempool-image_label * {
   margin: 5px 5px;
 }
 
@@ -546,7 +545,7 @@ pre tt:after {
   align-items: center;
 }
 
-.transaction-fee_block {
+.transaction-fee__block {
   height: 150px;
   width: 150px;
   min-height: 150px;
@@ -558,7 +557,7 @@ pre tt:after {
   align-items: center;
 }
 
-.transaction-fee_text {
+.transaction-fee__text {
   margin: 10px 20px;
   width: 500px;
 }

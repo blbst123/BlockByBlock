@@ -7,19 +7,18 @@ import "./styles/header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="Nav">
-    <div className="flex-line">
-      <h1 className="flex-line">
-        <Logo />
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1></div>
+    <h1 className="flex-line">
+      <Logo />
+      <Link
+        to="/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        {siteTitle}
+      </Link>
+    </h1>
   </header>
 )
 

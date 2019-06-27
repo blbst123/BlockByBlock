@@ -26,7 +26,7 @@ const IntroImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="intro_image"/>
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="intro-image"/>
 }
 
 export default IntroImage

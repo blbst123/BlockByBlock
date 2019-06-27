@@ -14,19 +14,19 @@ const Mempool = () => (
         <h3>Secret Key confirmed! Your transaction has been sent to the Mempool</h3>
       </div>
       <h1>What is the Mempool?</h1>
-      <div className="mempool_description">
-        <div className="mempool_image">
+      <div className="mempool-description">
+        <div className="mempool-image">
           <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/mempool.svg" alt="mempool" />
-          <div className="mempool_image_label flex-line">
+          <div className="mempool-image_label flex-line">
             <img className="mempool-blocks" src="https://blockbyblock.s3.us-east-2.amazonaws.com/green_box.svg" alt="red box" />
             <p>Our transaction</p>
           </div>
-          <div className="mempool_image_label flex-line">
+          <div className="mempool-image_label flex-line">
             <img className="mempool-blocks" src="https://blockbyblock.s3.us-east-2.amazonaws.com/red_box.svg" alt="green box" />
             <p>Other transactions</p>
           </div>
         </div>
-        <div className="mempool_text text-block">
+        <div className="mempool-text text-block">
           <p>The Mempool is the place where unprocessed transactions wait to
               be filled. Every interval (around 10 mins), the Bitcoin network picks
               a group of transactions from the Mempool and executes them all in

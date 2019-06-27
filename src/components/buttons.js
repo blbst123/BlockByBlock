@@ -10,15 +10,15 @@ const Buttons = function (props) {
   if (prevPage === null) {
     return (
       <div className="buttons">
-        <Link to={`/${nextPage}`} className="button_link">Begin</Link>
+        <Link to={`/${nextPage}`} className="button-link">Begin</Link>
       </div>
     );
   }
 
   return (
     <div className="buttons">
-      <Link to={`/${nextPage}`} className="button_link">Next</Link>
-      <Link to={`/${prevPage}`} className="button_link">Back</Link>
+      <Link to={`/${nextPage}`} className="button-link">Next</Link>
+      <Link to={`/${prevPage}`} className="button-link">Back</Link>
     </div>
   );
 };
