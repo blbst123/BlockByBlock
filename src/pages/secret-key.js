@@ -7,7 +7,7 @@ import Buttons from "../components/buttons";
 
 const SecretKey = () => (
   <Layout>
-    <SEO title="Transaction" />
+    <SEO title="Secret Key" />
     <div className="ConfirmSecretKey">
       <div className="flex-line">
         <img className="btc-wallet" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-identity-theft-64.png" alt="wallet icon" />

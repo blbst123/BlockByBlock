@@ -21,7 +21,7 @@ export default class TransactionFee extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="TransactionFee" />
+        <SEO title="Transaction Fee" />
         <div>
           <div className="flex-line">
             <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/checkmark_red.svg" alt="confirmation icon" />
@@ -50,7 +50,7 @@ export default class TransactionFee extends React.Component {
           </div>
         </div>
         <ProgressBar location={4} pointerDes="Transaction Fee" />
-        <Buttons nextPage="index" prevPage="mempool" />
+        <Buttons nextPage="transaction-success" prevPage="mempool" />
       </Layout >
     )
   }

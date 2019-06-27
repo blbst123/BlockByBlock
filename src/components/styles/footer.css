@@ -1,7 +1,4 @@
 .Footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(52, 58, 64);
   overflow: hidden;
   height: 40px;
@@ -17,12 +14,7 @@
   font-size: 18px;
 }
 
-.icon_github {
-  height: 18px;
-  width: 18px;
-}
-
-.icon_linkedin {
+.icon_github, .icon_linkedin {
   height: 18px;
   width: 18px;
 }
