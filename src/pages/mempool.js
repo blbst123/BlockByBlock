@@ -15,7 +15,7 @@ const Mempool = () => (
       </div>
       <h1>What is the Mempool?</h1>
       <div className="mempool-description">
-        <div className="mempool-image">
+        <div className="flex-column">
           <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/mempool.svg" alt="mempool" />
           <div className="mempool-image_label flex-line">
             <img className="mempool-blocks" src="https://blockbyblock.s3.us-east-2.amazonaws.com/green_box.svg" alt="red box" />
