@@ -10,7 +10,7 @@ const TransactionPage = () => (
     <SEO title="Transaction" />
     <div className="Transaction" >
       <div className="flex-line">
-        <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-identity-theft-64.png" alt="wallet icon" />
+        <img className="btc-wallet" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-identity-theft-64.png" alt="wallet icon" />
         <h3>Here is your Bitcoin Wallet</h3>
       </div>
       <h3>17A16QmavnUfCW11DAApiJxp7ARnxN5pGX</h3>
@@ -26,18 +26,18 @@ const TransactionPage = () => (
         <input type="text" placeholder="anonymous" />
       </div>
       <p>Transfer Target</p>
-      <div className="select_recipient">
-        <div className="recipient">
+      <div className="flex-line">
+        <div className="recipient flex-line">
           <input type="checkbox" className="filled-in" />
-          <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-old-person-48.png" alt="old man icon" />
+          <img className="recipient-icon" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-old-person-48.png" alt="old man icon" />
         </div>
-        <div className="recipient">
+        <div className="recipient flex-line">
           <input type="checkbox" className="filled-in" />
-          <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-person-female-48.png" alt="woman icon" />
+          <img className="recipient-icon" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-person-female-48.png" alt="woman icon" />
         </div>
-        <div className="recipient">
+        <div className="recipient flex-line">
           <input type="checkbox" className="filled-in" />
-          <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-morty-smith-48.png" alt="morty icon" />
+          <img className="recipient-icon" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-morty-smith-48.png" alt="morty icon" />
         </div>
       </div>
     </div>

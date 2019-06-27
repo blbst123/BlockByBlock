@@ -10,7 +10,7 @@ const SecretKey = () => (
     <SEO title="Transaction" />
     <div className="ConfirmSecretKey">
       <div className="flex-line">
-        <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-identity-theft-64.png" alt="wallet icon" />
+        <img className="btc-wallet" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-identity-theft-64.png" alt="wallet icon" />
         <h3>Here is your Bitcoin Wallet</h3>
       </div>
       <div className="flex-line">

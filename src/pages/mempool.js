@@ -17,12 +17,12 @@ const Mempool = () => (
       <div className="mempool_description">
         <div className="mempool_image">
           <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/mempool.svg" alt="mempool" />
-          <div className="mempool_image_label">
-            <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/green_box.svg" alt="red box" />
+          <div className="mempool_image_label flex-line">
+            <img className="mempool-blocks" src="https://blockbyblock.s3.us-east-2.amazonaws.com/green_box.svg" alt="red box" />
             <p>Our transaction</p>
           </div>
-          <div className="mempool_image_label">
-            <img src="https://blockbyblock.s3.us-east-2.amazonaws.com/red_box.svg" alt="green box" />
+          <div className="mempool_image_label flex-line">
+            <img className="mempool-blocks" src="https://blockbyblock.s3.us-east-2.amazonaws.com/red_box.svg" alt="green box" />
             <p>Other transactions</p>
           </div>
         </div>
