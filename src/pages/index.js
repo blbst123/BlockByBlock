@@ -14,10 +14,9 @@ const IndexPage = () => (
       <IntroImage />
       <h4>This quick interactive demo will show you the steps a Bitcoin
         transaction goes through after you press send.</h4>
-      <Link to={`/transaction`} style={{ textDecoration: 'none' }}><h4 className="press-begin">Press Here to start >></h4></Link>
+      <Link to={`/transaction`} style={{ textDecoration: 'none' }}><h4 className="press-begin">Press Here to Start >></h4></Link>
     </div>
     <ProgressBar location={0} pointerDes="Start" />
-    {/* <Buttons nextPage="transaction"/> */}
   </Layout>
 )
 

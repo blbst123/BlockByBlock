@@ -31,7 +31,7 @@ export default class TransactionFee extends React.Component {
           <div className="transaction-fee__description">
             <h4>Order of Transactions</h4>
             <div className="flex-around">
-              <div className="transaction-fee__block">
+              <div className="transaction-fee__block flex-line">
                 <p>Block 1MB</p>
               </div>
               <div className="transaction-fee__text text-block">

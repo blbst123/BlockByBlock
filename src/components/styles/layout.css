@@ -237,8 +237,9 @@ h1 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -254,8 +255,9 @@ h2 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Nunito', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -271,8 +273,9 @@ h3 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -288,12 +291,13 @@ h4 {
   padding-top: 0;
   margin-bottom: 0;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
+  font-family: 'Quicksand', sans-serif;
 }
 h5 {
   margin-left: 0;
@@ -350,6 +354,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 table {
   margin-left: 0;
@@ -452,11 +457,19 @@ pre tt:after {
   flex-direction: row;
 }
 
-/* INTRO */
-.Intro {
-  
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* INTRO */
 .Intro h1 {
   color: rgb(52, 58, 64);
   padding-bottom: 20px;
@@ -480,8 +493,11 @@ pre tt:after {
 }
 
 h4.press-begin {
-  font-size: 20px;
+  width: 250px;
+  height: 30px;
+  font-size: 22px;
   color: orange;
+  font-family: 'Nunito', sans-serif;
 }
 
 .press-begin:hover {
@@ -490,6 +506,10 @@ h4.press-begin {
 }
 
 /* TRANSACTION */
+.Transaction {
+  margin-top: 30px;
+}
+
 .btc-wallet {
   height: 50px;
   width: 50px;
@@ -499,16 +519,52 @@ h4.press-begin {
 .btc-amount {
   color: orange;
   font-size: 30px;
-  margin: 5px 0;
+  margin: 0 0 15px 0;
 }
 
-#secret-key {
-  color: grey;
-  margin: 5px;
+.key-description {
+  display: grid;
+  grid-template-columns: 125px 575px;
+  grid-template-rows: 35px 110px 35px 80px;
+  width: 700px;
+  margin-top: 30px;
+  text-align: start;
 }
 
-.recipient {
-  margin: 0 30px;
+#public-key-label {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  font-family: 'Nunito', sans-serif;
+}
+
+#public-key {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  font-weight: bold;
+  color: #FFBF00;
+}
+
+#public-key-text {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#private-key-label {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  font-family: 'Nunito', sans-serif;
+}
+
+#private-key {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  font-weight: bold;
+  color: #FFBF00;
+}
+
+#private-key-text {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
 }
 
 .recipient-icon {
@@ -557,12 +613,6 @@ h4.press-begin {
 }
 
 /* TRANSACTION FEE */
-.flex-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .transaction-fee__block {
   height: 150px;
   width: 150px;
@@ -570,9 +620,6 @@ h4.press-begin {
   min-width: 150px;
   border: 4px solid orange;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .transaction-fee__text {
