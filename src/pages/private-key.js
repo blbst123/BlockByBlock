@@ -22,8 +22,8 @@ const SecretKey = () => (
       <p className="tip" id="topTip">Forgot the private key? Go back one step to get it again.</p>
       <p className="tip">Make sure you never lose your real Bitcoin Wallet private key!</p>
     </div>
-    <ProgressBar location={2} pointerDes="Confirm Secret Key" />
-    <Buttons nextPage="mempool" prevPage="transaction" />
+    <ProgressBar location={2} pointerDes="Confirm Private Key" />
+    <Buttons nextPage="mempool" prevPage="wallet" />
   </Layout>
 );
 

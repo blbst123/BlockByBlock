@@ -7,8 +7,8 @@ import Buttons from "../components/buttons";
 
 const TransactionPage = () => (
   <Layout>
-    <SEO title="Transaction" />
-    <div className="Transaction" >
+    <SEO title="Wallet" />
+    <div className="Wallet" >
       <div className="flex-line">
         <img className="btc-wallet" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-identity-theft-64.png" alt="wallet icon" />
         <h3>Here is your Bitcoin Wallet</h3>
@@ -35,8 +35,8 @@ const TransactionPage = () => (
         <img className="recipient-icon" src="https://blockbyblock.s3.us-east-2.amazonaws.com/icons8-morty-smith-48.png" alt="morty icon" />
       </div> */}
     </div>
-    <ProgressBar location={1} pointerDes="Transaction" />
-    <Buttons nextPage="secret-key" prevPage="index" />
+    <ProgressBar location={1} pointerDes="Wallet" />
+    <Buttons nextPage="private-key" prevPage="index" />
   </Layout>
 )
 

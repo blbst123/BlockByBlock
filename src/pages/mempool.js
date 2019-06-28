@@ -40,7 +40,7 @@ const Mempool = () => (
       <h4>Let’s see if our transaction can get processed.</h4>
     </div>
     <ProgressBar location={3} pointerDes="Mempool" />
-    <Buttons nextPage="transaction-fee" prevPage="secret-key" />
+    <Buttons nextPage="transaction-fee" prevPage="private-key" />
   </Layout>
 );
 
